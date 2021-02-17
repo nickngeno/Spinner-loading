@@ -30,7 +30,7 @@ const fetchMuseuams = async ()=>{
   const muse = museuams.map(element => <li key ={element.id}>{element.title}</li>)
   return (
     <div className="App">
-      <h2>Spinner on Loading</h2>
+      <h2 className="App-header">Spinner on Loading</h2>
       {!loading ?( <ul>{muse}</ul> ):  < Spinner animation="border" /> }
     </div>
   );
