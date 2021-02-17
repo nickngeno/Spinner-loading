@@ -18,7 +18,7 @@ const fetchMuseuams = async ()=>{
    try{
 
     const response = await axios.get(`https://fakestoreapi.com/products`)
-      console.log(response.data)
+      // console.log(response.data)
       setMuseuams(response.data)
       setLoading(false)
    }catch(e){
